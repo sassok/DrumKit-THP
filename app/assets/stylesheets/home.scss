@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-    background-color: rgb(230, 99, 110);
+    background-color: rgb(142, 202, 236);
 }
 
 h1 {
@@ -32,8 +32,8 @@ footer {}
 
 .playing {
     transform: scale(1.1);
-    border-color: seagreen;
-    box-shadow: 0 0 10px seagreen;
+    border-color: rgb(46, 105, 139);
+    box-shadow: 0 0 10px rgb(46, 105, 139);
 }
 
 kbd {
