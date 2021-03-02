@@ -18,19 +18,19 @@
 
 
 
-function PressKey(e){
-  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-  console.log(key);
-  key.classList.add('playing');
-  return
+function PressKey(e) {
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    console.log(key);
+    key.classList.add('playing');
+    return
 };
 
-function removeTransition(e){
-  if(e.propertyName !== 'transform');
-  key.classList.remove('playing');
+function removeTransition(e) {
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    if (e.propertyName !== 'transform');
+    key.classList.remove('playing');
 };
 
 const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener("keydown", PressKey);
-
+window.addEventListener("keyup", removeTransition);
