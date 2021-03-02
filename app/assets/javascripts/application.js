@@ -14,4 +14,4 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-console.log("Hello Word");
+//= require_hello
